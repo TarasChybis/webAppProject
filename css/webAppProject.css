@@ -37,15 +37,15 @@
   cursor: pointer;                  
 }
 
-#list-in-header li:hover {                     
+#list-in-header li:hover {                   
   color: #fff;                      
   background: #c73535;                 
-  border-radius: 5px;               
+  border-radius: 8px;               
   border-color: silver;               
 }
 
 #list-in-header li:not(:last-of-type) {        
-  margin-right: 20px;               
+  margin-right: 30px;               
 }
 
 #img-header-right {
@@ -90,12 +90,43 @@
   width: 20%;   
   height: 2000px;                   
   padding: 20px 2.5px;              
-  background: #fafafa;              
+  background: #16c7af;              
   border: 2px solid silver;         
   float: left;                                      
   position: fixed;               
   top: 70px;    
   text-align: left;                
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
+
+#button-left {
+  width: 80%;
+  height: 35px;
+  margin-bottom: 20px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: #09a811;
+  border: 3px solid silver;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+  color: #000;
+  font-size: large;
+  font-style: italic;
+  font-weight: 1000;
+  cursor: pointer;
+}
+
+#button-left:hover {
+  width: 90%;
+  height: 40px;
+  background-color: #c73535;
+  border-radius: 25px;
+  color: #fff;
+  border-radius: 15px;
+  margin-bottom: 15px;
 }
 
 #footer {                           
