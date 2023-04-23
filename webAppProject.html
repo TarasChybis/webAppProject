@@ -6,9 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>webAppProject</title>
     <link rel="stylesheet" href="../webAppProject/css/webAppProject.css">
+
+    <!-- bootstrap reboot (для сброса стилей) -->
+    <link rel="stylesheet" href="libs/bootstrap-reboot.min.css">
+
+    <!-- bootstrap сетка -->
+    <link rel="stylesheet" href="libs/bootstrap-grid.min.css">
+
+    <!-- шрифты с Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital.wght@0,400;0,700;1,400&display=swap">
 </head>
 <body>
-    <div id="header">
+    <nav class="navbar">
+        <div class="container">
+            <!-- a.navbar-brand{BRAND} Emmet-->
+            <a href="#" class="navbar-brand">BRAND</a>
+            <div class="navbar-wrap">
+                <!-- ul.navbar-menu>li*4>a[href="#"] Emmet-->
+                <ul class="navbar-menu">
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Портфолыо</a></li>
+                    <li><a href="#">Цены</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+                <a href="#" class="callback">Обратный звонок</a>
+            </div>
+        </div>
+    </nav>
+    <!-- <div id="header">
         <img id="img-header-left" src="../webAppProject/img/webAppProject.png" alt="imaging webAppProject">
         <ul id="list-in-header">
             <li>Field_1</li>
@@ -20,7 +46,7 @@
             <option value="en">En</option>
         </select>
         <img id="img-header-right" src="../webAppProject/img/Hamburger_icon.png" alt="icon Hamburger_icon">
-    </div>
+    </div> -->
     <div id="main">
         1. The schima_1 shows relations between projects, customers, suppliers, performers and authority with total count of objects. <br>
         2. The schima_2 shows statistical information about all projects for all times devided for months. <br> 
