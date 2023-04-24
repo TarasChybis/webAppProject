@@ -4,35 +4,54 @@
 }
 
 body {
-  position: relative;
   font-family: 'Noto Sans', sans-serif;
   font-size: 16px;
   line-height: 1.4;
   color: #000;
   min-width: 320px;
   overflow-x: hidden;
-  height: auto;
+  height: 100vh;
 }
+
+@media (min-width: 500px) {
 
 .navbar {
   width: 100%;
   height: 70px;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  align-items: center;
+  text-align: center;
   /* тень: смещение по x, y, размытость, цвет, прозрачность */
   box-shadow: 0 4px 10px rgba(0, 0, 0, .1); 
 }
+}
+.navbar-brand {
+  flex: 2;
+  border: 1px solid silver;
+}
 
-.navbar .container {
+.navbar-brand a {
   /* значение высоты наследуется от родителя 70px */
-  height: inherit; 
-  display: flex;
+  height: inherit;
   justify-content: space-between;
   align-items: center;
+  font-weight: 700;
+  font-size: 26px;
+  text-decoration: none;
+  color: #000;
+  transition: all .07s ease-in-out;
+}
+
+.navbar-brand a:hover {
+  color: coral;
 }
 
 .navbar-menu {
+  flex: 4;
   list-style-type: none;
-  padding-left: 0;
-  margin-bottom: 0;
+  border: 1px solid silver;
 }
 
 .navbar-menu li {
@@ -41,28 +60,57 @@ body {
 
 .navbar-menu li a {
   display: inline-block;
-  color: #000;
+  color: #000; 
   opacity: 0.6;
   text-decoration: none;
   padding: 10px;
-
+  /* плавное изменение свойств + функция анимации*/
+  transition: all .07s ease-in-out;
 }
 
-.navbar-wrap {
-  display: flex;
+.navbar-menu li a:hover {
+  opacity: 1;
+}
+
+.navbar-call {
+  flex: 1;
   flex-flow: row nowrap;
+  border: 1px solid silver;
 }
 
-.callback {
-  margin-left: 30px;
-  padding: 20px;
+#navbar-call-number {
+  font-size: large;
+  float: left;
 }
 
-.navbar-brand {
-  font-weight: 700;
-  font-size: 26px;
+#navbar-call-text {
+  font-size: small;
+  float: left;
+}
+
+.navbar-message a {
+  flex: 1;
+  padding: 10px 10px;
+  background-color: coral;
+  border-radius: 100px;
+  color: #fff;
   text-decoration: none;
-  color: #000;
+  /* свечение (не как тень) */
+  /* отступ по х 0, отступ по у 4px, размытость 6px, цвет */
+  box-shadow: 0 4px 6px rgba(255, 127, 80, .2);
+  transition: all .1s ease-out;
+  border: 1px solid silver;
+}
+
+.navbar-message:hover {
+  transform: scale(1.04);
+  color: #fff;
+  box-shadow: 0 9px 9px rgba(255, 127, 80, .5);
+}
+
+.navbar-leng {
+  flex: 1;
+  border: 1px solid silver;
 }
 
 /* #header {                  
@@ -92,8 +140,7 @@ body {
   background: #fafafa; 
   color: #333;             
   border: 2px solid silver;         
-  padding: 0 20px;  
-                
+  padding: 0 20px;          
   cursor: pointer;               
 }
 
@@ -138,15 +185,16 @@ body {
   border: 2px solid;
 } */
 
-#main {                             
+#main {      
+  justify-content: flex-start;                       
   width: 80%;
   height: 100vh;
   margin-top: 70px;                       
   margin-left: 21%;                 
   background: #fafafa;              
-  border: 1px solid silver;         
+  /* border: 1px solid silver;          */
   padding: 20px 2.5px;              
-  float: left;                                             
+  float: left;
 }
 
 #left-side {  
@@ -316,16 +364,16 @@ body {
   display: block;                   
 }
 
-body {                              
+/* body {                              
   background: #7f9ab3;              
   background-image: url(' ');       
-  height: 2000px;    
-  /*background-attachment: fixed;*/               
+  height: 2000px;
+  background-attachment: fixed;              
   background-repeat: no-repeat;     
   background-position: center;      
   background-position: top;         
   background-size: cover;           
-}
+} */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
 
