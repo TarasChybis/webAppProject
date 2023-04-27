@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" lang="ua" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webAppProject</title>
+    <link rel="stylesheet" href="../webAppProject/css/webAppProject.css">
+
+    <!-- bootstrap reboot (для сброса стилей) -->
+    <link rel="stylesheet" href="libs/bootstrap-reboot.min.css">
+
+    <!-- bootstrap сетка -->
+    <link rel="stylesheet" href="libs/bootstrap-grid.min.css">
+
+    <!-- шрифты с Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital.wght@0,400;0,700;1,400&display=swap">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <!-- a.navbar-brand{BRAND} Emmet-->
+            <a href="#">BRAND</a>
+        </div>
+        <div class="navbar-menu">
+            <!-- ul.navbar-menu>li*4>a[href="#"] Emmet-->
+            <ul>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Портфоліо</a></li>
+                <li><a href="#">Ціни</a></li>
+                <li><a href="#">Контакти</a></li>
+            </ul>
+        </div>
+        <div class="navbar-call">
+           <a id="navbar-call-number" aria-label="0 800 700 777" hraf="tel:0800700777">0-800-700-777</a>
+           <div id="navbar-call-text">Безкоштовно по Україні</div>
+        </div>
+        <div class="navbar-message">
+            <a href="#">Зв'язатися з нами</a>
+        </div>
+        <div class="navbar-leng">
+            <select name="lenguage">
+                <option value="ua">Ua</option>
+                <option value="en">En</option>
+            </select>
+        </div>
+    </nav>
+    <!-- <div id="header">
+        <img id="img-header-left" src="../webAppProject/img/webAppProject.png" alt="imaging webAppProject">
+        <ul id="list-in-header">
+            <li>Field_1</li>
+            <li>Field_2</li>
+            <li>Field_3</li>
+        </ul>
+        <select name="lenguage" id="leng">
+            <option value="ua">Ua</option>
+            <option value="en">En</option>
+        </select>
+        <img id="img-header-right" src="../webAppProject/img/Hamburger_icon.png" alt="icon Hamburger_icon">
+    </div> -->
+    <div id="main">
+        1. The schima_1 shows relations between projects, customers, suppliers, performers and authority with total count of objects. <br>
+        2. The schima_2 shows statistical information about all projects for all times devided for months. <br> 
+        <p id="onclick-project"></p>
+        <p id="onclick-customers">Text2</p>
+    </div>
+    <div id="left-side"> 
+        <button id="button-left" type="button" onclick="onClickProject()">Projects</button><br>
+        <button id="button-left" type="button" onclick="onClickCustomers()">Customers</button><br>
+        <button id="button-left">Suppliers</button><br>
+        <button id="button-left">Authority</button><br>
+        <button id="button-left">Performers</button><br>
+        <button id="button-left">Materials</button><br>
+        <button id="button-left">Documents</button><br>
+        <a href="#" class="neon-button">
+            <span class="button_line button_line-top"></span>
+            <span class="button_line button_line-right"></span>
+            <span class="button_line button_line-bottom"></span>
+            <span class="button_line button_line-left"></span>
+            NEON BUTTON
+        </a>
+    </div>
+    <div id="right-side">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda deleniti doloribus iure aut quidem labore reprehenderit earum quia nulla neque, dignissimos esse eligendi mollitia pariatur autem at, odit provident magni?
+    </div>
+    <div id="footer">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ad beatae, libero architecto commodi illum ullam optio nihil consequuntur laboriosam, nemo sint dolor error. Hic natus ipsam repellat. Saepe, harum.
+    </div>
+    <div id="field-1-plus">
+        <p>+</p>
+    </div>
+    <div id="field-2-message">
+        <img src="" alt="">
+    </div>
+    <script src="../webAppProject/js/webAppProject.js"></script>
+</body>
+</html>
