@@ -1,6 +1,6 @@
 // Функція переадресація на іншу сторінку html.
 function onClickProject() {
-    document.location.href='../webAppProject/html/projects.html';
+    document.location.href='../html/projects.html';
 }
 
 
