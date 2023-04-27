@@ -62,10 +62,12 @@
     <div id="main">
         1. The schima_1 shows relations between projects, customers, suppliers, performers and authority with total count of objects. <br>
         2. The schima_2 shows statistical information about all projects for all times devided for months. <br> 
+        <p id="onclick-project"></p>
+        <p id="onclick-customers">Text2</p>
     </div>
-    <div id="left-side">
-        <button id="button-left" type="button" href="../webAppProject/html/projects.html">Projects</button><br>
-        <button id="button-left">Customers</button><br>
+    <div id="left-side"> 
+        <button id="button-left" type="button" onclick="onClickProject()">Projects</button><br>
+        <button id="button-left" type="button" onclick="onClickCustomers()">Customers</button><br>
         <button id="button-left">Suppliers</button><br>
         <button id="button-left">Authority</button><br>
         <button id="button-left">Performers</button><br>
@@ -91,5 +93,6 @@
     <div id="field-2-message">
         <img src="" alt="">
     </div>
+    <script src="../webAppProject/js/webAppProject.js"></script>
 </body>
 </html>
