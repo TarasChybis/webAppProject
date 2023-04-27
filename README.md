@@ -15,7 +15,8 @@
 
 HTML, CSS, JS, JAVA, SQL
 
-<img src="../webAppProject/img/main_page.png"/>
+<!-- <img src="../webAppProject/img/main_page.png"/> -->
+<img src="https://github.com/TarasChybis/webAppProject/blob/button-left/img/main_page.png"/>
 
 ## 2. Додаткова документація <a id="2"></a>
 + <a href="https://learn.microsoft.com/ru-ru/contribute/how-to-write-links#bookmark-links">White paper</a>
